@@ -1,19 +1,19 @@
-import { useParams, Navigate, useNavigate } from 'react-router-dom';
-import { getHeroById } from '../helpers';
-import { useMemo } from 'react';
+import { useParams, Navigate, useNavigate } from 'react-router-dom'
+import { getHeroById } from '../helpers'
+import { useMemo } from 'react'
 
 export const HeroPage = () => {
-  const { heroId } = useParams();
-  const navigate = useNavigate();
+  const { heroId } = useParams()
+  const navigate = useNavigate()
 
-  const hero = useMemo(() => getHeroById(heroId), [heroId]);
-  const onNavigateBack = () => navigate(-1);
+  const hero = useMemo(() => getHeroById(heroId), [heroId])
+  const onNavigateBack = () => navigate(-1)
 
   if (!hero) {
-    return <Navigate to='/marvel' />;
+    return <Navigate to='/marvel' />
   }
 
-  console.log(hero);
+  console.log(hero)
 
   return (
     <div className='mt-5 row'>
@@ -49,5 +49,5 @@ export const HeroPage = () => {
         </button>
       </div>
     </div>
-  );
-};
+  )
+}

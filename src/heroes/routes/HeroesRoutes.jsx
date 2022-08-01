@@ -1,6 +1,6 @@
-import { Navbar } from '../../ui';
-import { Navigate, Routes, Route } from 'react-router-dom';
-import { DCPage, HeroPage, MarvelPage, SearchPage } from '../pages';
+import { Navbar } from '../../ui'
+import { Navigate, Routes, Route } from 'react-router-dom'
+import { DCPage, HeroPage, MarvelPage, SearchPage } from '../pages'
 
 export const HeroesRoutes = () => {
   return (
@@ -17,5 +17,5 @@ export const HeroesRoutes = () => {
         </Routes>
       </div>
     </>
-  );
-};
+  )
+}

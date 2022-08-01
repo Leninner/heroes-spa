@@ -1,6 +1,6 @@
-import { Routes, Route } from 'react-router-dom';
-import { LoginPage } from '../auth';
-import { HeroesRoutes } from '../heroes';
+import { Routes, Route } from 'react-router-dom'
+import { LoginPage } from '../auth'
+import { HeroesRoutes } from '../heroes'
 
 export const AppRouter = () => {
   return (
@@ -10,5 +10,5 @@ export const AppRouter = () => {
         <Route path='login' element={<LoginPage />} />
       </Routes>
     </>
-  );
-};
+  )
+}
