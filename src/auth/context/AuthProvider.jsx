@@ -1,6 +1,6 @@
 import { useReducer } from 'react'
 import { types } from '../types/types'
-import { AuthContext } from './authContext'
+import { AuthContext } from './AuthContext'
 import { authReducer } from './authReducer'
 
 const initialState = {

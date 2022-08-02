@@ -4,7 +4,9 @@ import { AuthContext } from '../../auth'
 
 export const Navbar = () => {
   const navigate = useNavigate()
-  const store = useContext(AuthContext)
+  const {
+    user: { name },
+  } = useContext(AuthContext)
 
   const onLogout = () => {
     navigate('/login', { replace: true })
@@ -50,7 +52,7 @@ export const Navbar = () => {
       <div className='navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end'>
         <ul className='navbar-nav ml-auto'>
           <span className='nav-item nav-link text-info text-primary'>
-            Lenin
+            {name}
           </span>
 
           <button className='nav-item nav-link btn' onClick={onLogout}>

@@ -3,12 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import { AuthContext } from '../context'
 
 export const LoginPage = () => {
-  const store = useContext(AuthContext)
+  const { login } = useContext(AuthContext)
   const navigate = useNavigate()
 
-  console.log('store', store)
-
   const onLogin = () => {
+    login('Lenin Mazabanda')
+
     navigate('/', { replace: true })
   }
 
