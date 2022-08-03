@@ -31,7 +31,7 @@ export const SearchPage = () => {
           <h4>Searching...</h4>
           <hr />
 
-          <form onSubmit={onSearchSubmit}>
+          <form onSubmit={onSearchSubmit} data-testid='search-form'>
             <input
               type='text'
               placeholder='Search a Hero'
