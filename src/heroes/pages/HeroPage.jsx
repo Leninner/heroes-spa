@@ -13,8 +13,6 @@ export const HeroPage = () => {
     return <Navigate to='/marvel' />
   }
 
-  console.log(hero)
-
   return (
     <div className='mt-5 row'>
       <div className='col-4'>
